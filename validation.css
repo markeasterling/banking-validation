@@ -1,0 +1,29 @@
+body	{
+	margin: 0;
+	padding: 0;
+	background-color: #80807B
+}
+
+h1	{
+	text-align: center;
+}
+
+.content {
+	border: 2px solid #ABABA0;
+	background-color: #ababa0;
+	border-radius: 10px;
+	display: block;
+	margin-bottom: 1em;
+}
+
+input:invalid {
+  background-color: #ffdddd;
+}
+input:valid {
+  background-color: #ddffdd;
+}
+input:required {
+
+
+}
+

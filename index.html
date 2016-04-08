@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>Loan Application</title>
+	<link rel="stylesheet" href="/validation.css">
+</head>
+<body>
+	<h1>Loan Application</h1>
+
+	<div class="personal-info content">
+		<legend>Personal Information</legend>
+		<input type="text" class="personal-info" id="first-name" placeholder="First Name (required)" required size="30"></input>
+		<input type="text" class="personal-info" id="middle-initial" placeholder="Middle initial" size="30"></input>
+		<input type="text" class="personal-info" id="last-name" placeholder="Last Name (required)" required size="30"></input><input type="text" class="personal-info" id="address" placeholder="Your address (required)" required size="30"></input>
+	</div>
+	<div class="employer-info content">
+		<legend>Employer Information</legend>
+		<input type="text" class="personal-info" id="occupation" placeholder="Current Occupation (required)"  required size="30"></input>
+		<input type="text" class="personal-info" id="employer" placeholder="Current Employer (required)" size="30"  required></input><input type="text" class="personal-info" id="employer-address" placeholder="Employer Address" size="30"></input>
+	</div>
+	<div class="loan-info content">
+		<legend>Loan Information</legend>
+		<select name="Loan Type" required>
+			<option value="select" selected>Please select...</option>
+			<option value="commercial">Commercial</option>
+			<option value="real-estate">Real Estate</option>
+			<option value="personal">Personal</option>
+			<option value="mortgage">Mortgage</option>
+		</select>
+
+		<input type="text" class="loan-amount" placeholder="Requested Loan Amount (required)" required size="30"></input>
+		<div class="loan-length">
+			<label>Loan Length:</label>
+				<input type="radio" name="length" value="5 years"> 5 years
+				<input type="radio" name="length" value="15 years"> 15 years
+				<input type="radio" name="length" value="30 years"> 30 years
+		</div>
+
+		<div class="spec-cond">
+			<label>Special Conditions:</label>
+				<input type="checkbox" name="down-payment" value="down-payment">I have a down payment
+				<input type="checkbox" name="out-of-state-resident" value="out-of-state-resident"> Out-of-state resident
+				<input type="checkbox" name="married" value="married">Married
+				<input type="checkbox" name="cosign" value="cosign">Loan will be co-signed
+		</div>
+	</div>
+	<div class="comments content">
+		<legend>Additional Comments</legend>
+		<textarea name="additional-info" placeholder="Please share any relevant additional information..."></textarea>
+	</div>
+	<div class="contact-info content">
+		<legend>Contact Information</legend>
+		<input type="email" name="email" placeholder="Email Address (required)" required size="30">
+		<input type="tel" name="telophone" placeholder="Telephone Number (required)" pattern="[0-9]" required size="30">
+		<input type="url" name="url" placeholder="LinkedIn URL" size="30">
+	</div>
+	</div>
+</body>
+</html>
